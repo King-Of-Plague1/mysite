@@ -44,8 +44,7 @@ class Boost(models.Model):
             self.price *= 10
         self.power *= 2
         self.main_cycle.save()
-        return (self.main_cycle,
-                self.level,
+        return (self.level,
                 self.price,
                 self.power)
 
